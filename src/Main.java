@@ -25,8 +25,6 @@ public class Main
 
             switch(opcao)
             {
-                case 0:
-                    break;
                 case 1:
                     System.out.println("CADASTRO DE EMPREGADO:");
                     System.out.println("Digite o nome completo do empregado:");
@@ -38,6 +36,8 @@ public class Main
                     String endereco = input.nextLine();
                     System.out.println("Tipo de emprego:");
                     String emprego = input.nextLine();
+
+                    Empregado novoEmpregado = new Empregado(nome, cpf, endereco, emprego);
                     break;
                 case 2:
                     break;
